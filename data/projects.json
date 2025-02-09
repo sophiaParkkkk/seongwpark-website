@@ -1,0 +1,18 @@
+{
+    "recipe": {
+      "title": "Recipe Sharing App",
+      "description": "A web app for sharing and discovering new recipes.",
+      "image": "/images/recipe-app.jpg"
+    },
+    "resume-analyzer": {
+      "title": "AI-Powered Resume Analyzer",
+      "description": "An AI-driven tool that helps improve resumes with insights.",
+      "image": "/images/resume-analyzer.jpg"
+    },
+    "portfolio-website": {
+      "title": "Personal Portfolio Website",
+      "description": "A modern and responsive portfolio website built with Next.js.",
+      "image": "/images/portfolio-website.jpg"
+    }
+  }
+  
