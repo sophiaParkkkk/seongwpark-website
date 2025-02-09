@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import projectData from "@/data/projects.json"; // ✅ JSON 파일 불러오기
 import Image from "next/image";
 
+export const runtime = 'edge';
+
 // 🔥 `projectData` 타입을 명확하게 지정
 type ProjectKeys = keyof typeof projectData;
 
