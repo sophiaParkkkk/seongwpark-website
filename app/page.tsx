@@ -1,7 +1,6 @@
 "use client";
 import ProjectSection from "@/components/PojectSection";
 import { motion } from "framer-motion";
-import { h1 } from "framer-motion/client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -48,7 +47,7 @@ export default function FullPageScroll() {
       <section id="aboutme" className="h-screen flex flex-col justify-center items-center bg-gray-800 text-white snap-center">
         <h1 className="text-4xl font-bold">About Me</h1>
         <p className="mt-2 text-lg text-gray-400 text-center max-w-2xl">
-          I'm passionate about software engineering, AI, and building innovative web experiences.
+          I&apos;m passionate about software engineering, AI, and building innovative web experiences.
         </p>
       </section>
 

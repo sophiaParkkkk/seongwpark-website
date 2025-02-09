@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Baskervville } from "next/font/google";
-import ProjectSection from "@/components/PojectSection";
 
 // Google Fonts에서 Baskervville SC 로드
 const baskervville = Baskervville({
