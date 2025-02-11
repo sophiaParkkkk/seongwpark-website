@@ -3,6 +3,7 @@ import ProjectSection from "@/components/PojectSection";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import ExperienceSection from "@/components/ExperienceSection";
 
 export default function FullPageScroll() {
   return (
@@ -44,27 +45,50 @@ export default function FullPageScroll() {
       </section>
 
       {/* 2️⃣ About Me 섹션 */}
-      <section id="aboutme" className="h-screen flex flex-col justify-center items-center bg-gray-800 text-white snap-center">
-        <h1 className="text-4xl font-bold">About Me</h1>
-        <p className="mt-2 text-lg text-gray-400 text-center max-w-2xl">
-          I&apos;m passionate about software engineering, AI, and building innovative web experiences.
-        </p>
-      </section>
+      <section id="aboutme" className="h-screen flex justify-center items-center bg-[#f5f0eb] text-black snap-center">
+        <div className="max-w-5xl w-full flex flex-col md:flex-row items-center gap-10 p-10 bg-white shadow-lg rounded-lg">
+    
+    {/* 왼쪽 - 텍스트 소개 */}
+    <div className="flex-1 text-left">
+      <h1 className="text-5xl font-bold tracking-wide">ABOUT ME</h1>
+      <p className="text-gray-600 italic mt-1 text-lg">Seong Won Park</p>
+
+      <p className="mt-4 text-lg text-gray-700 leading-relaxed">
+        I&apos;m a <span className="font-semibold">senior Computer Science student at Georgia Institute of Technology</span>, passionate about 
+        <span className="font-semibold"> software engineering</span>. I love crafting efficient 
+        and scalable solutions that enhance user experience and system performance.
+      </p>
+
+      {/* 강조 태그 버튼 */}
+      <div className="mt-6 flex gap-3 flex-wrap">
+        <span className="px-4 py-2 bg-gray-200 rounded-full text-sm font-semibold">SOFTWARE ENGINEER</span>
+        <span className="px-4 py-2 bg-gray-200 rounded-full text-sm font-semibold">FULL-STACK DEVELOPER</span>
+        <span className="px-4 py-2 bg-gray-200 rounded-full text-sm font-semibold">TECH ENTHUSIAST</span>
+      </div>
+    </div>
+
+    {/* 오른쪽 - 프로필 이미지 */}
+    <div className="relative w-64 h-80 md:w-80 md:h-96 rounded-lg overflow-hidden shadow-lg">
+      <Image
+        src="/profile.png" // 프로필 이미지 경로
+        alt="Seong Won Park"
+        layout="fill"
+        objectFit="cover"
+      />
+    </div>
+
+  </div>
+</section>
+
 
       {/* 3️⃣ 경험(Experience) 섹션 */}
-      <section id="experience" className="h-screen flex flex-col justify-center items-center bg-gray-700 text-white snap-center">
-        <h1 className="text-4xl font-bold">Experience</h1>
-        <ul className="mt-4 space-y-4">
-          <li className="text-lg">💼 HigherU - Software Engineer Intern</li>
-          <li className="text-lg">💼 Samsung Semiconductor - DevOps Intern</li>
-        </ul>
-      </section>
+      <ExperienceSection />
 
      {/* 4️⃣ 프로젝트(Project) 섹션 (컴포넌트 사용) */}
       <ProjectSection />
 
       {/* 5️⃣ 컨택(Contact) 섹션 */}
-      <section id="contact" className="h-screen flex flex-col justify-center items-center bg-gray-600 text-white snap-center">
+      <section id="contact" className="h-screen flex flex-col justify-center items-center bg-gray-300 text-white snap-center">
         <h1 className="text-4xl font-bold">Contact Me</h1>
         <p className="mt-2">📩 Email: seongwon1105@gmail.com</p>
         <p>📱 LinkedIn: <a href="https://linkedin.com/in/seongwonpark" className="underline">seongwonpark</a></p>
