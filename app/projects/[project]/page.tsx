@@ -2,12 +2,10 @@
 
 import { useParams } from "next/navigation";
 import { useState, useEffect } from "react";
-import projectData from "@/data/projects.json"; // ✅ JSON 파일 불러오기
+import projectData from "@/data/projects.json"; // JSON 파일
 import Image from "next/image";
 
-export const runtime = 'edge';
-
-// 🔥 `projectData` 타입을 명확하게 지정
+// 🔥 JSON의 key (thread, calorie, buzzbot 등)를 추론
 type ProjectKeys = keyof typeof projectData;
 
 export default function ProjectPage() {
@@ -18,7 +16,7 @@ export default function ProjectPage() {
     if (params?.project) {
       const key = Array.isArray(params.project) ? params.project[0] : params.project;
       if (key in projectData) {
-        setProjectKey(key as ProjectKeys); // 🔥 TypeScript가 확실히 알도록 변환
+        setProjectKey(key as ProjectKeys);
       }
     }
   }, [params]);
@@ -32,7 +30,7 @@ export default function ProjectPage() {
   return (
     <div className="flex flex-col items-center bg-white py-10">
       <h1 className="text-4xl font-bold">{title}</h1>
-      <Image src={image} alt={title} className="w-96 h-auto rounded-md mt-6" />
+      <Image src={image} alt={title} width={400} height={250} className="rounded-md mt-6" />
       <p className="max-w-2xl text-lg text-gray-700 mt-4">{description}</p>
     </div>
   );

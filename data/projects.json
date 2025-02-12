@@ -1,17 +1,27 @@
 {
-  "recipe": {
-    "title": "Recipe Sharing App",
-    "description": "A web app for sharing and discovering new recipes.",
+  "thread": {
+    "title": "CS Thread Recommendation Website",
+    "description": "A platform to share and discover new recipes.",
     "image": "/images/recipe-app.jpg"
   },
-  "resume-analyzer": {
-    "title": "AI-Powered Resume Analyzer",
-    "description": "An AI-driven tool that helps improve resumes with insights.",
+  "calorie": {
+    "title": "Calorie & Recipe Tracker App",
+    "description": "An AI-driven tool to analyze and optimize resumes.",
     "image": "/images/resume-analyzer.jpg"
   },
-  "portfolio-website": {
-    "title": "Personal Portfolio Website",
-    "description": "A modern and responsive portfolio website built with Next.js.",
-    "image": "/images/portfolio-website.jpg"
+  "buzzbot": {
+    "title": "Buzzbot",
+    "description": "An AI-driven tool to analyze and optimize resumes.",
+    "image": "/images/resume-analyzer.jpg"
+  },
+  "coupon": {
+    "title": "Local business coupon & deals platform",
+    "description": "A web app that provides exclusive coupons and deals for local businesses.",
+    "image": "/images/resume-analyzer.jpg"
+  },
+  "fifth": {
+    "title": "My Fifth Project",
+    "description": "Description for the fifth project.",
+    "image": "/images/resume-analyzer.jpg"
   }
 }
