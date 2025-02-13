@@ -19,7 +19,13 @@ const experiences: Experience[] = [
     location: "Seoul, South Korea",
     duration: "June 2024 - August 2024",
     logo: "/samsung.jpg",
-    details: "...",
+    details: `
+    During my software development internship at Samsung Electronics, I focused on automating development workflows and enhancing code quality. 
+    I implemented autopep8 for automated PEP 8-compliant code formatting and integrated Pytest with GitHub Actions to enable continuous testing and validation. 
+    Utilizing Jira and Confluence, I managed tasks efficiently, while gaining proficiency in Git, Perforce, and CI/CD workflows. 
+    Additionally, I contributed to feature branch deployment, enforced Gating for quality assurance, and streamlined code reviews and integration processes, 
+    ensuring a more efficient and reliable development pipeline.
+  `,
   },
   {
     company: "HigherU",
@@ -27,15 +33,25 @@ const experiences: Experience[] = [
     location: "Frisco, TX",
     duration: "January 2024 - May 2024",
     logo: "/higheru.jpg",
-    details: "developed...",
+    details: `
+    At HigherU, I contributed to the development of an educational platform aimed at assisting users in coding interview preparation. 
+    My work involved designing and implementing database schemas to efficiently store and manage user data, question banks, and coding solutions. 
+    I collaborated with the team to plan backend architecture, ensuring scalability and optimal performance. 
+    Additionally, I gained experience in system design principles and API development, while integrating key features to improve the user experience.
+    `,
   },
   {
     company: "Georgia Institute of Technology Office of Information Technology",
-    role: "Software Engineer Intern",
+    role: "Student Technical Support Agent",
     location: "Atlanta, GA",
     duration: "August 2024 - Present",
     logo: "/gtoit.jpg",
-    details: "...",
+    details:`
+    As a Student Technical Support Agent at Georgia Tech OIT, I assist with maintaining and troubleshooting printing stations, refilling supplies, and resolving basic technical issues for students and faculty. 
+    I ensure smooth operation of IT resources by restocking necessary materials and addressing common hardware and software concerns. 
+    Additionally, I utilize Jira to track and manage support tasks, ensuring efficient issue resolution. 
+    Through this role, I have developed hands-on problem-solving skills and gained experience in IT operations within an academic setting.
+  `,
   },
 ];
 
