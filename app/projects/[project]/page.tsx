@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import projectData from "@/data/projects.json"; // JSON 파일
 import Image from "next/image";
+export const runtime = 'edge';
 
 // 🔥 JSON의 key (thread, calorie, buzzbot 등)를 추론
 type ProjectKeys = keyof typeof projectData;
