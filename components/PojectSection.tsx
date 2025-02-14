@@ -1,113 +1,77 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import projectData from "@/data/projects.json"; // 🔥 JSON 데이터 불러오기
 import { useRef } from "react";
 
-const projects = [
-  {
-    title: "CS Thread Recommendation Website",
-    description: "A platform to recommend CS threads based on user interests.",
-    image: "/images/threads.jpg",
-    link: "/projects/thread",
-  },
-  {
-    title: "Calorie & Recipe Tracker App",
-    description: "An app to track your meals and calories effortlessly.",
-    image: "/images/calorie.jpg",
-    link: "/projects/calorie",
-  },
-  {
-    title: "Buzzbot",
-    description: "AI-driven chatbot for Georgia Institute of Technology.",
-    image: "/images/buzzbot.jpg",
-    link: "/projects/buzzbot",
-  },
-  {
-    title: "Local business coupon & deals platform",
-    description: "A web app that provides exclusive coupons and deals for local businesses",
-    image: "/images/coupon.jpg",
-    link: "/projects/coupon",
-  },
-  {
-    title: "My Fifth Project",
-    description: "Description for the fifth project.",
-    image: "/images/fifth.jpg",
-    link: "/projects/fifth",
-  },
-];
+type Project = {
+  title: string;
+  description: string;
+  image: string;
+  link?: string;
+};
 
 export default function ProjectSection() {
-  // 스크롤 컨테이너를 제어하기 위한 Ref
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-  // 왼쪽으로 스크롤
+  // 좌우 스크롤 함수
   const handleScrollLeft = () => {
-    scrollContainerRef.current?.scrollBy({
-      left: -300, // 원하는 픽셀만큼 이동
-      behavior: "smooth",
-    });
+    scrollContainerRef.current?.scrollBy({ left: -350, behavior: "smooth" });
   };
 
-  // 오른쪽으로 스크롤
   const handleScrollRight = () => {
-    scrollContainerRef.current?.scrollBy({
-      left: 300, // 원하는 픽셀만큼 이동
-      behavior: "smooth",
-    });
+    scrollContainerRef.current?.scrollBy({ left: 350, behavior: "smooth" });
   };
 
   return (
-    <section
-      id="projects"
-      className="h-screen flex flex-col justify-center items-center bg-[#F9F7F1] snap-center"
-    >
+    <section id="projects" className="h-screen flex flex-col justify-center items-center bg-[#F9F7F1] snap-center overflow-hidden">
       <h2 className="text-4xl font-bold text-gray-900 mb-10">My Projects</h2>
 
-      {/* 슬라이드 전체 컨테이너 (상대 위치로 화살표 버튼 배치) */}
-      <div className="relative w-full max-w-6xl px-6">
-
+      <div className="relative w-full max-w-7xl px-8">
         {/* 왼쪽 화살표 버튼 */}
         <button
           onClick={handleScrollLeft}
-          className="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700 transition"
+          className="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-4 rounded-full hover:bg-gray-700 transition"
         >
           ←
         </button>
 
-        {/* 실제 카드들이 들어가는 스크롤 영역 */}
-        <div
-          ref={scrollContainerRef}
-          className="overflow-x-auto flex gap-6 scrollbar-hide scroll-smooth"
-        >
-          {/* 카드들 (가로 일렬) */}
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="min-w-[250px] bg-white rounded-lg shadow-lg p-6 flex-shrink-0"
-            >
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={300}
-                height={200}
-                className="w-full h-auto rounded-md"
-              />
-              <h3 className="text-xl font-semibold mt-4">{project.title}</h3>
-              <p className="text-gray-600 mt-2">{project.description}</p>
-              <Link
-                href={project.link}
-                className="mt-4 px-6 py-2 inline-block border border-gray-900 text-gray-900 rounded-lg hover:bg-gray-900 hover:text-white transition"
-              >
-                Read More →
-              </Link>
-            </div>
-          ))}
+        {/* 프로젝트 카드들 */}
+        <div ref={scrollContainerRef} className="overflow-x-auto flex gap-8 scrollbar-hide scroll-smooth">
+          {Object.entries(projectData).map(([key, projectData]) => {
+            const project = projectData as Project;
+
+            return (
+              <div key={key} className="w-[350px] h-[450px] bg-white rounded-xl shadow-xl p-6 flex-shrink-0">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={320}
+                  height={200}
+                  className="w-full h-[200px] rounded-lg object-cover"
+                />
+                <h3 className="text-xl font-semibold mt-4">{project.title}</h3>
+                
+                {/* 🔥 자동 줄바꿈 허용 + 설명 칸 크기 자동 조절 */}
+                <p className="text-gray-600 mt-2 whitespace-normal break-words overflow-hidden">
+                  {project.description}
+                </p>
+
+                {/* "Read More" 버튼 */}
+                <Link href={project.link ?? `/projects/${key}`} target={project.link ? "_blank" : "_self"}>
+                  <button className="mt-5 px-6 py-3 border border-gray-900 text-gray-900 rounded-lg hover:bg-gray-900 hover:text-white transition">
+                    Read More →
+                  </button>
+                </Link>
+              </div>
+            );
+          })}
         </div>
 
         {/* 오른쪽 화살표 버튼 */}
         <button
           onClick={handleScrollRight}
-          className="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700 transition"
+          className="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-4 rounded-full hover:bg-gray-700 transition"
         >
           →
         </button>

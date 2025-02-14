@@ -1,18 +1,19 @@
 {
   "thread": {
     "title": "CS Thread Recommendation Website",
-    "description": "A platform to share and discover new recipes.",
-    "image": "/images/recipe-app.jpg"
+    "description": "A tool to find your ideal CS thread based on your interests.",
+    "image": "/images/thread.jpg"
   },
   "calorie": {
-    "title": "Calorie & Recipe Tracker App",
-    "description": "An AI-driven tool to analyze and optimize resumes.",
-    "image": "/images/resume-analyzer.jpg"
+    "title": "Green Plate",
+    "description": "Sustainable food management system designed to streamline food consumption and shopping practices.",
+    "image": "/calorie.png",
+    "link": "https://gregarious-custard-f1a8bf.netlify.app/"
   },
   "buzzbot": {
     "title": "Buzzbot",
-    "description": "An AI-driven tool to analyze and optimize resumes.",
-    "image": "/images/resume-analyzer.jpg"
+    "description": "AI chatbot designed to assist Georgia Tech Students and Staffs.",
+    "image": "/buzzbot.png"
   },
   "coupon": {
     "title": "Local business coupon & deals platform",
