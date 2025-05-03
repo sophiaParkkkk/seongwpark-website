@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import projectData from "@/data/projects.json"; // 🔥 JSON 데이터 불러오기
+import projectData from "@/data/projects.json"; // JSON 데이터 불러오기
 import { useRef } from "react";
 
 type Project = {
@@ -24,7 +24,7 @@ export default function ProjectSection() {
   };
 
   return (
-    <section id="projects" className="h-screen flex flex-col justify-center items-center bg-[#F9F7F1] snap-center overflow-hidden">
+    <section id="projects" className="h-screen flex flex-col justify-center items-center bg-[#f4f1ee] snap-center overflow-hidden">
       <h2 className="text-4xl font-bold text-gray-900 mb-10">My Projects</h2>
 
       <div className="relative w-full max-w-7xl px-8">
@@ -52,7 +52,7 @@ export default function ProjectSection() {
                 />
                 <h3 className="text-xl font-semibold mt-4">{project.title}</h3>
                 
-                {/* 🔥 자동 줄바꿈 허용 + 설명 칸 크기 자동 조절 */}
+                {/* 자동 줄바꿈 허용 + 설명 칸 크기 자동 조절 */}
                 <p className="text-gray-600 mt-2 whitespace-normal break-words overflow-hidden">
                   {project.description}
                 </p>

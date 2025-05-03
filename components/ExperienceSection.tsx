@@ -30,7 +30,7 @@ const experiences: Experience[] = [
   {
     company: "HigherU",
     role: "Software Engineer Intern",
-    location: "Frisco, TX",
+    location: "Plano, TX",
     duration: "January 2024 - May 2024",
     logo: "/higheru.jpg",
     details: `
@@ -61,7 +61,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="h-screen flex flex-col justify-center items-center bg-white text-black snap-center"
+      className="h-screen flex flex-col justify-center items-center bg-[#f4f1ee] text-black snap-center"
     >
     <div className="max-w-4xl mx-auto py-16">
       <h2 className="text-4xl font-bold text-center text-black-600">Experience</h2>

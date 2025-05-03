@@ -45,8 +45,8 @@ export default function FullPageScroll() {
       </section>
 
       {/* 2️⃣ About Me 섹션 */}
-      <section id="aboutme" className="h-screen flex justify-center items-center bg-[#f5f0eb] text-black snap-center">
-        <div className="max-w-5xl w-full flex flex-col md:flex-row items-center gap-10 p-10 bg-white shadow-lg rounded-lg">
+      <section id="aboutme" className="h-screen flex justify-center items-center bg-[#f4f1ee] text-black snap-center">
+        <div className="max-w-5xl w-full flex flex-col md:flex-row items-center gap-10 p-10">
     
     {/* 왼쪽 - 텍스트 소개 */}
     <div className="flex-1 text-left">
@@ -61,9 +61,9 @@ export default function FullPageScroll() {
 
       {/* 강조 태그 버튼 */}
       <div className="mt-6 flex gap-3 flex-wrap">
-        <span className="px-4 py-2 bg-gray-200 rounded-full text-sm font-semibold">SOFTWARE ENGINEER</span>
-        <span className="px-4 py-2 bg-gray-200 rounded-full text-sm font-semibold">FULL-STACK DEVELOPER</span>
-        <span className="px-4 py-2 bg-gray-200 rounded-full text-sm font-semibold">TECH ENTHUSIAST</span>
+        <span className="px-4 py-2 border border-black text-black rounded-full text-sm font-semibold bg-transparent">SOFTWARE ENGINEER</span>
+        <span className="px-4 py-2 border border-black text-black rounded-full text-sm font-semibold bg-transparent">FULL-STACK DEVELOPER</span>
+        <span className="px-4 py-2 border border-black text-black rounded-full text-sm font-semibold bg-transparent">TECH ENTHUSIAST</span>
       </div>
     </div>
 
@@ -88,7 +88,7 @@ export default function FullPageScroll() {
       <ProjectSection />
 
       {/* 5️⃣ 컨택(Contact) 섹션 */}
-      <section id="contact" className="h-screen flex flex-col justify-center items-center bg-gray-300 text-white snap-center">
+      <section id="contact" className="h-screen flex flex-col justify-center items-center bg-[#f4f1ee] text-blck snap-center">
         <h1 className="text-4xl font-bold">Contact Me</h1>
         <p className="mt-2">📩 Email: seongwon1105@gmail.com</p>
         <p>📱 LinkedIn: <a href="https://linkedin.com/in/seongwonpark" className="underline">seongwonpark</a></p>
