@@ -45,19 +45,24 @@ export default function FullPageScroll() {
       </section>
 
       {/* 2️⃣ About Me 섹션 */}
-      <section id="aboutme" className="h-screen flex justify-center items-center bg-[#f4f1ee] text-black snap-center">
+      <section
+        id="aboutme"
+        className="h-screen flex justify-center items-center bg-[#f4f1ee] text-black snap-center"
+      >
         <div className="max-w-5xl w-full flex flex-col md:flex-row items-center gap-10 p-10">
-    
-    {/* 왼쪽 - 텍스트 소개 */}
-    <div className="flex-1 text-left">
-      <h1 className="text-5xl font-bold tracking-wide">ABOUT ME</h1>
-      <p className="text-gray-600 italic mt-1 text-lg">Seong Won Park</p>
+          {/* 왼쪽 - 텍스트 소개 */}
+          <div className="flex-1 text-left">
+            <h1 className="text-5xl font-bold tracking-wide">ABOUT ME</h1>
+            <p className="text-gray-600 italic mt-1 text-lg">Seong Won Park</p>
 
-      <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-        I&apos;m a <span className="font-semibold">senior Computer Science student at Georgia Institute of Technology</span>, passionate about 
-        <span className="font-semibold"> software engineering</span>. I love crafting efficient 
-        and scalable solutions that enhance user experience and system performance.
-      </p>
+            <p className="mt-4 text-lg text-gray-700 leading-relaxed">
+              Hello, my name is Seong Won Park. I&apos;m a senior Computer Science student at Georgia Institute of Technology
+              who loves turning ideas into reliable, user-centered software.My experience includes a software development internship at Hyundai Mobis, where I built an Android in-vehicle infotainment application with voice interaction (STT/TTS) 
+              and personality-based features, and a DevOps internship at Samsung Semiconductor, where I automated CI/CD pipelines using Python and GitHub Actions. 
+              I have also developed personal and academic projects such as <span className="font-semibold">StreamBeat</span>, a music streaming app, and <span className="font-semibold">GreenPlate</span>, a sustainable food management system.
+              I&apos;m excited by problems at the intersection of UX and systems—where thoughtful design meets
+              robust engineering.
+            </p>
 
       {/* 강조 태그 버튼 */}
       <div className="mt-6 flex gap-3 flex-wrap">
@@ -92,6 +97,14 @@ export default function FullPageScroll() {
         <h1 className="text-4xl font-bold">Contact Me</h1>
         <p className="mt-2">📩 Email: seongwon1105@gmail.com</p>
         <p>📱 LinkedIn: <a href="https://linkedin.com/in/seongwonpark" className="underline">seongwonpark</a></p>
+        {/* Resume 다운로드 버튼 */}
+        <a
+          href="/Resume_SeongWonPark.pdf" 
+          download="Resume_SeongWonPark.pdf"
+          className="mt-6 px-6 py-3 border border-black text-black rounded-lg hover:bg-black hover:text-white transition-all"
+        >
+          Download Resume
+        </a>
       </section>
 
     </div>
