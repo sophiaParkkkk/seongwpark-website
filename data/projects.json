@@ -2,6 +2,7 @@
   "thread": {
     "title": "CS Thread Recommendation Website",
     "description": "A tool to find your ideal CS thread based on your interests.",
+    "details": "Developed a web application that helps students select their Computer Science thread by matching their interests with thread characteristics. Utilized React for the frontend and Node.js for the backend, ensuring a seamless user experience. Implemented a recommendation algorithm to provide personalized thread suggestions based on user input.",
     "image": "/images/thread.jpg"
   },
   "calorie": {
@@ -13,11 +14,13 @@
   "buzzbot": {
     "title": "Buzzbot",
     "description": "AI chatbot designed to assist Georgia Tech Students and Staffs.",
+    "details": "Developed an AI-powered chatbot using API to assist Georgia Tech students and staff with campus-related inquiries. Integrated the chatbot into a user-friendly web interface built with React, allowing users to easily access information about campus services, events, and resources. Implemented natural language processing techniques to enhance the chatbot's understanding and response accuracy.",
     "image": "/buzzbot.png"
   },
   "coupon": {
     "title": "Local business coupon & deals platform",
     "description": "A web app that provides exclusive coupons and deals for local businesses.",
+    "details": "Developed an web app that aggregates exclusive coupons and deals from local businesses to help users save money while supporting their community. Built the frontend using React and the backend with Node.js, ensuring a smooth and responsive user experience. Implemented a secure user authentication system and a robust database to manage business listings and user interactions.",
     "image": "/images/resume-analyzer.jpg"
   },
   "fifth": {

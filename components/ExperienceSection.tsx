@@ -14,6 +14,21 @@ type Experience = {
 
 const experiences: Experience[] = [
   {
+    company: "Hyundai Mobis",
+    role: "Software Engineer Intern",
+    location: "Seoul, South Korea",
+    duration: "July 2025 - August 2025",
+    logo: "/hyundai.png",
+    details: `
+    During my internship at Hyundai Mobis, I worked on developing an in-vehicle infotainment (IVI) application for purpose-built vehicles (PBVs). 
+    I focused on implementing key features such as speech-to-text (STT) and text-to-speech (TTS) integration, a personality-based MBTI-style test for driver engagement, 
+    and persistent data storage using Room DB. I also designed smooth user navigation with Android Jetpack Navigation Components and ensured a user-centric experience 
+    by balancing safety, personalization, and entertainment. Through this project, I gained hands-on experience in Android development with Kotlin, 
+    strengthened my understanding of software architecture, and collaborated with teammates to create a prototype that reflected real automotive use cases.
+
+  `,
+  },
+  {
     company: "Samsung Semiconductor",
     role: "Software Engineer Intern",
     location: "Seoul, South Korea",
